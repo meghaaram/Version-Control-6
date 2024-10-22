@@ -1,7 +1,10 @@
 # encode by megha ramprasad
 
-def encode(password):
-    pass
+def encode(encode_pw):
+    encode_pw = ''
+    for item in range(len(encode_pw)):
+
+
 
 def main():
     password = ' '
