@@ -3,7 +3,7 @@
 def encode(pw):
     string = ''
     for item in pw[0:9]: # limits 8 digits
-        string += str((int(item[0]) + 3) % 10) # accepts the first number, adds 3, and mod 10, returns first number + 3
+        string += str((int(item[0]) + 3) % 10) # accepts the number, adds 3, and mod 10, returns number + 3
     return str(string)
 
 if __name__ == "__main__":
