@@ -1,11 +1,10 @@
 # encode by megha ramprasad
 
-def encode(password):
+def encode(pw):
     string = ''
-    for item in password[0:9]:
+    for item in pw[0:9]:
         string += str((int(item[0]) + 3) % 10)
     return str(string)
-
 
 if __name__ == "__main__":
         password = ''
