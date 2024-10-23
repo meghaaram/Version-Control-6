@@ -1,10 +1,17 @@
 # encode by megha ramprasad
-
+# decode by david campbell
 def encode(pw):
     string = ''
     for item in pw[0:9]: # limits 8 digits
         string += str((int(item[0]) + 3) % 10) # accepts the number, adds 3, and mod 10, returns number + 3
     return str(string)
+
+def decode(password):
+    original_password = ""
+    for char in password:
+        decoded_digit = (int(char) - 3) % 10  # Shifts each digit back by 3
+        original_password += str(decoded_digit) # Puts all the digits in order.
+    return original_password
 
 if __name__ == "__main__":
         password = ''
