@@ -15,6 +15,7 @@ def decode(password):
     return original_password
 
 if __name__ == "__main__":
+    def main():
         password = ''
         while True: # menu
             print(' ')
@@ -33,4 +34,4 @@ if __name__ == "__main__":
                 print('The encoded password is '+ str(password) + ', and the original password is ' + str(decode(password) + '.'))
             elif option == 3: # ending
                 break
-
+print(main())
