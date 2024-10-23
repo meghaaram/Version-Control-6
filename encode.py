@@ -1,5 +1,6 @@
 # encode by megha ramprasad
 # decode by david campbell
+
 def encode(pw):
     string = ''
     for item in pw[0:9]: # limits 8 digits
@@ -10,7 +11,7 @@ def decode(password):
     original_password = ""
     for char in password:
         decoded_digit = (int(char) - 3) % 10  # Shifts each digit back by 3
-        original_password += str(decoded_digit) # Puts all the digits in order.
+        original_password += str(decoded_digit) # Puts all the decoded digits in order.
     return original_password
 
 if __name__ == "__main__":
